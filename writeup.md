@@ -35,7 +35,7 @@ The goals / steps of this project are the following:
 
 ### Writeup / README
 
-#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  [Here](https://github.com/udacity/CarND-Advanced-Lane-Lines/blob/master/writeup_template.md) is a template writeup for this project you can use as a guide and a starting point.  
+#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  
 
 You're reading it!
 
@@ -121,7 +121,7 @@ I tested this step by plotting the lines polynomial fits, sliding windows and de
 
 The code for this step of my pipeline appears in the 28-31th code cells of the IPython notebook.
 
-To measure the lane's Radius of Curvature, I applied the formula to calculte it at the bottom of the image (where the car is positionned on the lane) for each of the second-order polynomial curves. I made sure I converted the coordinates from pixels space to real-world space (in meters), knowing that the lane is about 30 meters long and 3.7 meters wide. I finally simply averaged the radius of curvature of the 2 lane lines to get the final radius of curvature of the lane.
+To measure the lane's Radius of Curvature, I applied the formula to calculte it at the bottom of the image (where the car is positionned on the lane) for each of the second-order polynomial curves. I made sure I converted the coordinates from pixels space to real-world space (in meters), knowing that the lane is about 30 meters long and 3.7 meters wide. Finally, I simply averaged the radius of curvature of the 2 lane lines to get the final radius of curvature of the lane.
 
 To measure the position of the vehicule with respect to the lane center, I first calculated the x-position of the center of the images (which corresponds to the center of the vehicule). I then calculated the x-position of the center of the lane at the bottom of the image (where the car is positionned on the lane) by calculating the midpoint between the two polynomial curves. The difference between those 2 x-position values gives the relative position of the vehicule to the lane center. Again, I converted the coordinates from pixel space to real-world space. 
 
@@ -141,7 +141,7 @@ Here is an example of the lane being projected in green on a test image:
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-![alt text][video1]
+Here's a [link to my video result](./project_video_output.mp4)
 
 ---
 
